@@ -2,12 +2,18 @@
 import Drawer from '@/components/Drawer.vue'
 import JSONViewer from '@/components/JSONViewer.vue'
 import { useRegle } from '@regle/core'
-import { required } from '@regle/rules'
+import { applyIf, minLength, required } from '@regle/rules'
+import { ref } from 'vue'
+
+const condition = ref(true)
 
 const { r$ } = useRegle(
   { name: '' },
   {
-    name: { required },
+    name: {
+      required: applyIf(condition, required),
+      minLength: applyIf(condition, minLength(3)),
+    },
   },
 )
 </script>
