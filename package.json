@@ -16,9 +16,9 @@
     "pinia": "^2.2.6",
     "vue": "^3.5.13",
     "vue-router": "^4.4.5",
-    "@regle/core": "latest",
-    "@regle/rules": "latest",
-    "@regle/zod": "latest",
+    "@regle/core": "0.4.8",
+    "@regle/rules": "0.4.8",
+    "@regle/zod": "0.4.8",
     "@andypf/json-viewer": "2.1.7",
     "@vueuse/core": "12.0.0"
   },
