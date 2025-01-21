@@ -3,27 +3,18 @@ import Drawer from '@/components/Drawer.vue'
 import JSONViewer from '@/components/JSONViewer.vue'
 import { useRegle } from '@regle/core'
 import { applyIf, minLength, required } from '@regle/rules'
-import { useRegleSchema } from '@regle/schemas'
 import { ref } from 'vue'
-import { z } from 'zod'
 
 const condition = ref(true)
 
-// const { r$ } = useRegle(
-//   { name: '' },
-//   {
-//     name: {
-//       required: applyIf(condition, required),
-//       minLength: applyIf(condition, minLength(3)),
-//     },
-//   },
-// )
-
-const { r$ } = useRegleSchema(
+const { r$ } = useRegle(
   { name: '' },
-  z.object({
-    name: z.string(),
-  }),
+  {
+    name: {
+      required: applyIf(condition, required),
+      minLength: applyIf(condition, minLength(3)),
+    },
+  },
 )
 </script>
 
@@ -34,7 +25,7 @@ const { r$ } = useRegleSchema(
       <div class="flex flex-col">
         <label>Your name</label>
         <input class="border p-2 rounded" v-model="r$.$value.name" placeholder="Victor Regle" />
-        <ul class="text-red-400 text-sm" v-if="r$.$errors.name.length">
+        <ul class="text-red-400 text-sm mt-1" v-if="r$.$errors.name.length">
           <li v-for="error of r$.$errors.name" :key="error">{{ error }}</li>
         </ul>
       </div>

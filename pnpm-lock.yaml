@@ -12,14 +12,14 @@ importers:
         specifier: 2.1.7
         version: 2.1.7
       '@regle/core':
-        specifier: 0.7.1-beta.1
-        version: 0.7.1-beta.1(vue@3.5.13(typescript@5.6.3))
+        specifier: 0.7.1
+        version: 0.7.1(vue@3.5.13(typescript@5.6.3))
       '@regle/rules':
-        specifier: 0.7.1-beta.1
-        version: 0.7.1-beta.1(vue@3.5.13(typescript@5.6.3))
+        specifier: 0.7.1
+        version: 0.7.1(vue@3.5.13(typescript@5.6.3))
       '@regle/schemas':
-        specifier: 0.7.1-beta.1
-        version: 0.7.1-beta.1(vue@3.5.13(typescript@5.6.3))(zod@3.24.1)
+        specifier: 0.7.1
+        version: 0.7.1(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
       '@vueuse/core':
         specifier: 12.0.0
         version: 12.0.0(typescript@5.6.3)
@@ -571,24 +571,16 @@ packages:
   '@polka/url@1.0.0-next.28':
     resolution: {integrity: sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==}
 
-  '@regle/core@0.7.1-beta.1':
-    resolution: {integrity: sha512-PaL5JnAV2a6k+/b21JeQ8REA3hZTIrVmMDk559eZjpSAdS+OVP9+STBEXmN3eLUCKX2UH9fnpBAEWlpE5b2Esw==}
+  '@regle/core@0.7.1':
+    resolution: {integrity: sha512-/OJrIfmFi45bFDP95ZHHfL/xw9Wq4vDIH/Dp+bh5D1N193GeT5lJaGFL9hF4qTPDEJ5u+mdX0f8PIozQFEfrDQ==}
     peerDependencies:
       vue: ^3.3.0
 
-  '@regle/rules@0.7.1-beta.1':
-    resolution: {integrity: sha512-ztxaaRluQXUc6hzlV3zq9u9PMlIIp9mgGhyM8t3ReEumX6eA3Lojj4FftukdmMnB8dAUclBJum0/74chwPHAHw==}
+  '@regle/rules@0.7.1':
+    resolution: {integrity: sha512-7JPLNOFpv4QXvMJfiy4xv0Q7PyWsCUPt+K7Yh5RBfzYsPUQEzVOZhl4HB726usVw/6g1LAn8M3JvZXMHHfaO2Q==}
 
-  '@regle/schemas@0.7.1-beta.1':
-    resolution: {integrity: sha512-iwT2V7nGCYF50u2VPGL7wk0lSuOvR+FSP/Sftstj0EFhu1vyL6N+2coZ3+2xeDzh9PqMgKb4WKtPdkcCVc6nWA==}
-    peerDependencies:
-      valibot: ^1
-      zod: ^3.24.0
-    peerDependenciesMeta:
-      valibot:
-        optional: true
-      zod:
-        optional: true
+  '@regle/schemas@0.7.1':
+    resolution: {integrity: sha512-2WW0WuDuUFZc85GDcywpkJIILkCfJGEIwq1UwbI7kiKM8HhB8iWoeKcduiZ67td349ei0aLnCF7Xutt4QFnadA==}
 
   '@rollup/pluginutils@5.1.3':
     resolution: {integrity: sha512-Pnsb6f32CD2W3uCaLZIzDmeFyQ2b8UWMFI7xtwUezpcGBDVDW6y9XgAWIlARiGAo6eNF5FK5aQTr0LFyNyqq5A==}
@@ -1919,6 +1911,14 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
+  valibot@1.0.0-beta.12:
+    resolution: {integrity: sha512-j3WIxJ0pmUFMfdfUECn3YnZPYOiG0yHYcFEa/+RVgo0I+MXE3ToLt7gNRLtY5pwGfgNmsmhenGZfU5suu9ijUA==}
+    peerDependencies:
+      typescript: '>=5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
   vite-hot-client@0.2.4:
     resolution: {integrity: sha512-a1nzURqO7DDmnXqabFOliz908FRmIppkBKsJthS8rbe8hBEXwEwe4C3Pp33Z1JoFCYfVL4kTOMLKk0ZZxREIeA==}
     peerDependencies:
@@ -2503,24 +2503,25 @@ snapshots:
 
   '@polka/url@1.0.0-next.28': {}
 
-  '@regle/core@0.7.1-beta.1(vue@3.5.13(typescript@5.6.3))':
+  '@regle/core@0.7.1(vue@3.5.13(typescript@5.6.3))':
     dependencies:
       vue: 3.5.13(typescript@5.6.3)
 
-  '@regle/rules@0.7.1-beta.1(vue@3.5.13(typescript@5.6.3))':
+  '@regle/rules@0.7.1(vue@3.5.13(typescript@5.6.3))':
     dependencies:
-      '@regle/core': 0.7.1-beta.1(vue@3.5.13(typescript@5.6.3))
+      '@regle/core': 0.7.1(vue@3.5.13(typescript@5.6.3))
     transitivePeerDependencies:
       - vue
 
-  '@regle/schemas@0.7.1-beta.1(vue@3.5.13(typescript@5.6.3))(zod@3.24.1)':
+  '@regle/schemas@0.7.1(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))':
     dependencies:
-      '@regle/core': 0.7.1-beta.1(vue@3.5.13(typescript@5.6.3))
-      '@regle/rules': 0.7.1-beta.1(vue@3.5.13(typescript@5.6.3))
+      '@regle/core': 0.7.1(vue@3.5.13(typescript@5.6.3))
+      '@regle/rules': 0.7.1(vue@3.5.13(typescript@5.6.3))
       '@standard-schema/spec': 1.0.0-rc.0
-    optionalDependencies:
+      valibot: 1.0.0-beta.12(typescript@5.6.3)
       zod: 3.24.1
     transitivePeerDependencies:
+      - typescript
       - vue
 
   '@rollup/pluginutils@5.1.3(rollup@4.28.1)':
@@ -3859,6 +3860,10 @@ snapshots:
       punycode: 2.3.1
 
   util-deprecate@1.0.2: {}
+
+  valibot@1.0.0-beta.12(typescript@5.6.3):
+    optionalDependencies:
+      typescript: 5.6.3
 
   vite-hot-client@0.2.4(vite@6.0.3(@types/node@22.10.2)(jiti@2.4.2)(sass@1.82.0)(yaml@2.6.1)):
     dependencies:
