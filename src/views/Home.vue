@@ -3,18 +3,27 @@ import Drawer from '@/components/Drawer.vue'
 import JSONViewer from '@/components/JSONViewer.vue'
 import { useRegle } from '@regle/core'
 import { applyIf, minLength, required } from '@regle/rules'
+import { useRegleSchema } from '@regle/schemas'
 import { ref } from 'vue'
+import { z } from 'zod'
 
 const condition = ref(true)
 
-const { r$ } = useRegle(
+// const { r$ } = useRegle(
+//   { name: '' },
+//   {
+//     name: {
+//       required: applyIf(condition, required),
+//       minLength: applyIf(condition, minLength(3)),
+//     },
+//   },
+// )
+
+const { r$ } = useRegleSchema(
   { name: '' },
-  {
-    name: {
-      required: applyIf(condition, required),
-      minLength: applyIf(condition, minLength(3)),
-    },
-  },
+  z.object({
+    name: z.string(),
+  }),
 )
 </script>
 
