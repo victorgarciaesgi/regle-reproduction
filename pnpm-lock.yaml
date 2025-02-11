@@ -12,14 +12,14 @@ importers:
         specifier: 2.1.7
         version: 2.1.7
       '@regle/core':
-        specifier: 0.7.5
-        version: 0.7.5(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
+        specifier: 0.8.2
+        version: 0.8.2(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
       '@regle/rules':
-        specifier: 0.7.5
-        version: 0.7.5(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
+        specifier: 0.8.2
+        version: 0.8.2(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
       '@regle/schemas':
-        specifier: 0.7.5
-        version: 0.7.5(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
+        specifier: 0.8.2
+        version: 0.8.2(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(valibot@1.0.0-beta.14(typescript@5.6.3))(vue@3.5.13(typescript@5.6.3))(zod@3.24.1)
       '@vueuse/core':
         specifier: 12.0.0
         version: 12.0.0(typescript@5.6.3)
@@ -574,8 +574,8 @@ packages:
   '@polka/url@1.0.0-next.28':
     resolution: {integrity: sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==}
 
-  '@regle/core@0.7.5':
-    resolution: {integrity: sha512-tjCnj2vjnGGXqWdyPfcwge901d2KbTzCAexIdBSA081DWp9w69uPjN3WFw4LyfxKRF7H9L5IY0+XeqgyZDsYog==}
+  '@regle/core@0.8.2':
+    resolution: {integrity: sha512-NEtWsGOJkwUXc294TNzsKht3p0CYopRdn4LTfoGNqNgohyvjLm5gwlcgNEzNKeQJdhe4ykHca8XkQPQIrCYcyw==}
     peerDependencies:
       pinia: '>=2.2.5'
       vue: '>=3.3.0'
@@ -583,11 +583,19 @@ packages:
       pinia:
         optional: true
 
-  '@regle/rules@0.7.5':
-    resolution: {integrity: sha512-w/JJgmwDb34vf1opaCZ6VTuBZnsUQT+Kk+/nQMZgduwKGs9B0Md+itRgKUNpTj0FiSA4k7YpFKrzxpWSpejnZw==}
+  '@regle/rules@0.8.2':
+    resolution: {integrity: sha512-6hSV5+1QgYH63G9ljfCMo9GxZZNEZ9RrdhZKz0f1fVvWj4py2xUjkom2XIXe9h/ZGc/LLOoR6MpeE6ZVoCpj5A==}
 
-  '@regle/schemas@0.7.5':
-    resolution: {integrity: sha512-dvuzG/QzbrsW4Vt3ZNeanoVwXv6FGFDraQPpPvgKqEaJgnL8Ev+1MI2v+Q4FK7mkzTrvodX7tHw7ALTiYsceAA==}
+  '@regle/schemas@0.8.2':
+    resolution: {integrity: sha512-g6cvSM9E9QK+8hXIHK1eGu3o1nr6wZ6Cwfgc3drRSU7UKeMAhzYwMU2bCP0hCyu7xdekXQ9WLYXvV7dTvLB46g==}
+    peerDependencies:
+      valibot: ^1.0.0-beta.11
+      zod: ^3.24.0
+    peerDependenciesMeta:
+      valibot:
+        optional: true
+      zod:
+        optional: true
 
   '@rollup/pluginutils@5.1.3':
     resolution: {integrity: sha512-Pnsb6f32CD2W3uCaLZIzDmeFyQ2b8UWMFI7xtwUezpcGBDVDW6y9XgAWIlARiGAo6eNF5FK5aQTr0LFyNyqq5A==}
@@ -700,8 +708,8 @@ packages:
     resolution: {integrity: sha512-tlqY9xq5ukxTUZBmoOp+m61cqwQD5pHJtFY3Mn8CA8ps6yghLH/Hw8UPdqg4OLmFW3IFlcXnQNmo/dh8HzXYIQ==}
     engines: {node: '>=18'}
 
-  '@standard-schema/spec@1.0.0-rc.0':
-    resolution: {integrity: sha512-DcY/ICFcZIESNTLTexIT108HOqd1FtxsiLV4ZYGluySWyjF6TZ6troNyXjiqoHU6j0wN3A6SmYnTA5CHQp9blw==}
+  '@standard-schema/spec@1.0.0':
+    resolution: {integrity: sha512-m2bOd0f2RT9k8QJx1JN85cZYyH1RqFBdlwtkSlf4tBDYLCiiZnv1fIIwacK6cqwXavOydf0NPToMQgpKq+dVlA==}
 
   '@tailwindcss/forms@0.5.9':
     resolution: {integrity: sha512-tM4XVr2+UVTxXJzey9Twx48c1gcxFStqn1pQz0tRsX8o3DvxhN5oY5pvyAbUx7VTaZxpej4Zzvc6h+1RJBzpIg==}
@@ -2510,29 +2518,29 @@ snapshots:
 
   '@polka/url@1.0.0-next.28': {}
 
-  '@regle/core@0.7.5(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))':
+  '@regle/core@0.8.2(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))':
     dependencies:
       vue: 3.5.13(typescript@5.6.3)
     optionalDependencies:
       pinia: 2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
 
-  '@regle/rules@0.7.5(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))':
+  '@regle/rules@0.8.2(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))':
     dependencies:
-      '@regle/core': 0.7.5(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
+      '@regle/core': 0.8.2(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
     transitivePeerDependencies:
       - pinia
       - vue
 
-  '@regle/schemas@0.7.5(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))':
+  '@regle/schemas@0.8.2(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(valibot@1.0.0-beta.14(typescript@5.6.3))(vue@3.5.13(typescript@5.6.3))(zod@3.24.1)':
     dependencies:
-      '@regle/core': 0.7.5(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
-      '@regle/rules': 0.7.5(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
-      '@standard-schema/spec': 1.0.0-rc.0
+      '@regle/core': 0.8.2(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
+      '@regle/rules': 0.8.2(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
+      '@standard-schema/spec': 1.0.0
+    optionalDependencies:
       valibot: 1.0.0-beta.14(typescript@5.6.3)
       zod: 3.24.1
     transitivePeerDependencies:
       - pinia
-      - typescript
       - vue
 
   '@rollup/pluginutils@5.1.3(rollup@4.28.1)':
@@ -2604,7 +2612,7 @@ snapshots:
 
   '@sindresorhus/merge-streams@4.0.0': {}
 
-  '@standard-schema/spec@1.0.0-rc.0': {}
+  '@standard-schema/spec@1.0.0': {}
 
   '@tailwindcss/forms@0.5.9(tailwindcss@3.4.16)':
     dependencies:
