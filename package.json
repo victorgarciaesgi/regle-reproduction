@@ -13,16 +13,16 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@andypf/json-viewer": "2.1.7",
-    "@regle/core": "0.10.4",
-    "@regle/rules": "0.10.4",
-    "@regle/schemas": "0.10.4",
+    "@andypf/json-viewer": "2.1.10",
+    "@regle/core": "1.0.5",
+    "@regle/rules": "1.0.5",
+    "@regle/schemas": "1.0.5",
     "@vueuse/core": "12.0.0",
     "pinia": "3.0.1",
+    "valibot": "1.0.0",
     "vue": "^3.5.13",
     "vue-router": "^4.4.5",
-    "zod": "3.24.1",
-    "valibot": "1.0.0"
+    "zod": "3.24.2"
   },
   "devDependencies": {
     "@tailwindcss/forms": "0.5.9",
